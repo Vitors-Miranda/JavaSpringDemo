@@ -17,8 +17,7 @@ import jakarta.servlet.http.HttpSession;
 @Controller
 public class HomeController {
     @RequestMapping(value="/", method=RequestMethod.GET)
-    public String home(Model model) {
-        model.addAttribute("mensaje", "hola");
+    public String home() {
         return "home";
     }   
     
